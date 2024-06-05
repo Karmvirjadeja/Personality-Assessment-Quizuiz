@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Career Counseling Quiz</title>
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center mb-4">Career Counseling Quiz</h1>
+      <form action="/result" method="POST" class="quiz-form">
+        <div class="form-group">
+          <label for="subject">What subjects do you enjoy the most?</label>
+          <select id="subject" name="subject" class="form-control">
+            <option value="Science">Science</option>
+            <option value="Math">Math</option>
+            <option value="Arts">Arts</option>
+            <option value="Commerce">Commerce</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="activity">Which activities do you prefer?</label>
+          <select id="activity" name="activity" class="form-control">
+            <option value="Researching">Researching</option>
+            <option value="Building Things">Building Things</option>
+            <option value="Creating Art">Creating Art</option>
+            <option value="Analyzing Data">Analyzing Data</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="environment"
+            >What is your favorite type of environment?</label
+          >
+          <select id="environment" name="environment" class="form-control">
+            <option value="Laboratory">Laboratory</option>
+            <option value="Office">Office</option>
+            <option value="Studio">Studio</option>
+            <option value="Market">Market</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="problem"
+            >What kind of problems do you like to solve?</label
+          >
+          <select id="problem" name="problem" class="form-control">
+            <option value="Technical Problems">Technical Problems</option>
+            <option value="Mathematical Problems">Mathematical Problems</option>
+            <option value="Creative Problems">Creative Problems</option>
+            <option value="Business Problems">Business Problems</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="hobbies">What are your favorite hobbies?</label>
+          <select id="hobbies" name="hobbies" class="form-control">
+            <option value="Reading">Reading</option>
+            <option value="Sports">Sports</option>
+            <option value="Music">Music</option>
+            <option value="Gaming">Gaming</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="social">How do you prefer to interact with others?</label>
+          <select id="social" name="social" class="form-control">
+            <option value="Individually">Individually</option>
+            <option value="In Groups">In Groups</option>
+            <option value="Leading">Leading</option>
+            <option value="Following">Following</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="workStyle">What is your preferred work style?</label>
+          <select id="workStyle" name="workStyle" class="form-control">
+            <option value="Independent">Independent</option>
+            <option value="Team-Based">Team-Based</option>
+            <option value="Structured">Structured</option>
+            <option value="Flexible">Flexible</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="learning">How do you prefer to learn new things?</label>
+          <select id="learning" name="learning" class="form-control">
+            <option value="Hands-On">Hands-On</option>
+            <option value="Reading">Reading</option>
+            <option value="Listening">Listening</option>
+            <option value="Watching">Watching</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="pressure"
+            >How do you handle pressure and deadlines?</label
+          >
+          <select id="pressure" name="pressure" class="form-control">
+            <option value="Very Well">Very Well</option>
+            <option value="Well">Well</option>
+            <option value="Not Well">Not Well</option>
+            <option value="Poorly">Poorly</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="initiative">Do you take initiative in projects?</label>
+          <select id="initiative" name="initiative" class="form-control">
+            <option value="Always">Always</option>
+            <option value="Often">Often</option>
+            <option value="Sometimes">Sometimes</option>
+            <option value="Rarely">Rarely</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="communication"
+            >How important is communication in your work?</label
+          >
+          <select id="communication" name="communication" class="form-control">
+            <option value="Very Important">Very Important</option>
+            <option value="Important">Important</option>
+            <option value="Somewhat Important">Somewhat Important</option>
+            <option value="Not Important">Not Important</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="creativity"
+            >How much creativity is involved in your work?</label
+          >
+          <select id="creativity" name="creativity" class="form-control">
+            <option value="A Lot">A Lot</option>
+            <option value="Some">Some</option>
+            <option value="Little">Little</option>
+            <option value="None">None</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="technology"
+            >How comfortable are you with technology?</label
+          >
+          <select id="technology" name="technology" class="form-control">
+            <option value="Very Comfortable">Very Comfortable</option>
+            <option value="Comfortable">Comfortable</option>
+            <option value="Somewhat Comfortable">Somewhat Comfortable</option>
+            <option value="Not Comfortable">Not Comfortable</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="goals"
+            >What is your approach to setting and achieving goals?</label
+          >
+          <select id="goals" name="goals" class="form-control">
+            <option value="Very Methodical">Very Methodical</option>
+            <option value="Methodical">Methodical</option>
+            <option value="Somewhat Methodical">Somewhat Methodical</option>
+            <option value="Not Methodical">Not Methodical</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="balance"
+            >How do you balance work and personal life?</label
+          >
+          <select id="balance" name="balance" class="form-control">
+            <option value="Very Well">Very Well</option>
+            <option value="Well">Well</option>
+            <option value="Not Well">Not Well</option>
+            <option value="Poorly">Poorly</option>
+          </select>
+        </div>
+        <button
+          type="submit"
+          class="btn btn-primary btn-block"
+          style="margin-bottom: 20px"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

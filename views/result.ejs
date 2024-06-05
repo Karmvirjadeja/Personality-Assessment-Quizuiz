@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Career Options</title>
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center mb-4">Your Career Options</h1>
+      <div class="jumbotron">
+        <h3 class="heading">
+          Based on your interests, you might enjoy a career in:
+        </h3>
+        <ul id="results-section" class="list-group">
+          <% careerOptions.forEach(option => { %>
+          <li class="list-group-item"><%= option %></li>
+          <% }) %>
+        </ul>
+      </div>
+      <div class="text-center">
+        <a href="/" class="btn btn-primary">Back to Quiz</a>
+        <a href="http://127.0.0.1:5000/" class="btn btn-primary">Want guidance</a>
+      </div>
+    
+      </div>
+
+    
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

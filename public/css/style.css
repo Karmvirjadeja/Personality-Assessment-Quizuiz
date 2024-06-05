@@ -1,0 +1,35 @@
+body {
+  background-color: #7de0f6; /* light ocean blue */
+  font-family: "Arial", sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+h1 {
+  color: #007bff;
+}
+
+.quiz-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.jumbotron {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item {
+  border: none;
+}
+
+.resize {
+  margin-bottom: 20px;
+}
